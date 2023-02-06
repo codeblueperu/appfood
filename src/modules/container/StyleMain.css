@@ -106,3 +106,43 @@ aside{
     border-radius: 50%;
     text-align: center;
 }
+
+@media only screen and (max-width: 600px){
+    aside{
+        position: fixed;
+    }
+
+    .input-search{
+        position: absolute;
+        top: 82px;
+        width: 90%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+    }
+    .not-show{
+        display: none;
+    }
+    .float-item{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin: 18px;
+        z-index: 1000;
+    }
+
+    .menu-container{
+        display: flex;
+        justify-content: end;
+        align-items: end;
+    }
+    .btn-menu{
+       position: relative;
+       margin: 0;
+    }
+}
+@media only screen and (min-width: 600px){
+    
+}

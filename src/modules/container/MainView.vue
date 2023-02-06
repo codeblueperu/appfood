@@ -17,7 +17,7 @@
         <!-- ITEMS -->
         <div class="menu-container">
            
-           <div class="item-menu">
+           <div class="item-menu float-item">
                 <span class="bg-warning material-icons-sharp">shopping_cart</span>
                 <div class="notification bg-info">0</div>
            </div>
@@ -32,6 +32,11 @@
                 <div class="user-main">
                     <h5>JMoreI</h5>
                 </div>
+           </div>
+
+           <div class="item-menu btn-menu">
+            <!-- sort | segment-->
+                <span class="material-icons-sharp">sort</span>
            </div>
 
         </div>
