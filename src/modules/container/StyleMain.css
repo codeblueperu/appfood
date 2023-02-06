@@ -144,5 +144,28 @@ aside{
     }
 }
 @media only screen and (min-width: 600px){
-    
+    .input-search{
+       margin-left: 50px;
+    }
+    .not-show{
+        display: none;
+    }
+
+    .float-item{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin: 18px;
+        z-index: 1000;
+    }
+
+    .menu-container{
+        display: flex;
+        justify-content: end;
+        align-items: end;
+    }
+    .btn-menu{
+       position: relative;
+       margin: 0;
+    }
 }
