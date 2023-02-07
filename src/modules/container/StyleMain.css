@@ -106,7 +106,26 @@ aside{
     border-radius: 50%;
     text-align: center;
 }
+.navbar-item{
+    
+    position: absolute;
+}
 
+main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-carrito{
+    background: var(--color-white);
+    width: 30%;
+    height: calc(100vh - 70px);
+}
+
+/* ================================================================================================= */
+
+/* PARA DISPOSITIVOS EXTRA PEQUEÑOS */
 @media only screen and (max-width: 600px){
     aside{
         position: fixed;
@@ -142,7 +161,32 @@ aside{
        position: relative;
        margin: 0;
     }
+
+    .navbar-item{
+        background: var(--color-dark);
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        height: calc(100% - 70px);
+        padding: 1.2rem;
+        transition: 0.9s;
+        transform: translateX(-1000px);
+    }
+
+    .show-navbar{
+        transition: 0.9s;
+        transform: translateX(0);
+    }
+
+    main{
+        width:100%;
+        background-color: red;
+        position: absolute;
+        top: 150px;
+    }
 }
+
+/* PARA DISPOSITIVOS PEQUEÑOS */
 @media only screen and (min-width: 600px){
     .input-search{
        margin-left: 50px;
@@ -168,4 +212,51 @@ aside{
        position: relative;
        margin: 0;
     }
+}
+
+/* PARA DISPOSITIVOS MEDIANOS */
+@media only screen and (min-width: 768px){
+    .menu-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 7px;
+        width: 180px;
+    }
+
+    .not-show{
+        display: flex;
+    }
+
+    .btn-menu{
+        display:none;
+       }
+}
+
+/* PARA DISPOSITIVOS GRANDES */
+@media only screen and (min-width: 992px){
+    
+}
+
+/* PARA DISPOSITIVOS EXTRA GRANDES */
+@media only screen and (min-width: 1200px){
+    .menu-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 7px;
+        width: 180px;
+    }
+
+    .not-show{
+        display: flex;
+    }
+
+   .btn-menu{
+    display:none;
+   }
+
+   .navbar-item{
+    display: none;
+   }
 }

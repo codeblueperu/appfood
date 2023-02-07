@@ -6,7 +6,7 @@
             <span class="material-icons-sharp">fastfood</span>
             <h5>FastFood</h5>
         </div>
-
+        
         <!-- SEARCH -->
         <div class="input-search password">
             <input type="text" placeholder="¿Que pediras hoy?">
@@ -34,16 +34,33 @@
                 </div>
            </div>
 
-           <div class="item-menu btn-menu">
-            <!-- sort | segment-->
-                <span class="material-icons-sharp">sort</span>
+           <div class="item-menu btn-menu" @click="openMenu = !openMenu">
+            <!-- sort | segment -->
+                <span class="material-icons-sharp">{{ openMenu === true ? 'sort' : 'segment' }}</span>
            </div>
 
         </div>
     </aside>
     <!-- END LEFT NAVBAR -->
-</template>
 
+    <!-- NAVIGATOR NAVBAR -->
+    <div :class="openMenu === true ? 'navbar-item show-navbar' : 'navbar-item'">
+        <NavigatorNav :openmenu="openMenu"/>
+    </div>
+    <main>
+        <!-- CONTAINER LEFT -->
+       <div class="container-left">
+            <h3>CATEGORIA</h3>
+       </div>
+
+       <!-- SHOPPING CART -->
+       <div class="container-carrito">
+            <h3>SHOOPING</h3>
+       </div>
+    </main>
+</template>
 <style scoped>
     @import './StyleMain.css';
 </style>
+<script src="./Main.ts" lang="ts"></script>
+
