@@ -1,6 +1,6 @@
 <template>
     <div class="input-group">
-        <input type="text" placeholder="¿Que pediras hoy?">
+        <input type="text" placeholder="¿what will you order today?">
         <span class="icon-search material-icons-outlined">search</span>
     </div>
 </template>
