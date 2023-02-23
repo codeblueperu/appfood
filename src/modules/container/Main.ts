@@ -1,13 +1,14 @@
-import NavigatorNav from '@/modules/container/NavigatorComponent.vue'
+import NavigatorNav from '@/components/navigation/NavigatorComponent.vue'
 import InputSearchs from '@/components/input-searchs/InputSearchsComponent.vue'
-import Itemcategory from '@/components/item-category/ItemCategoryComponet.vue'
+import CheckOut from '@/components/check-out/CheckOutComponent.vue'
+
 import { ref, Ref } from 'vue'
 const appMain = {
     name: "mainapp",
     components:{
         NavigatorNav,
         InputSearchs,
-        Itemcategory
+        CheckOut
     },
     
     setup(){

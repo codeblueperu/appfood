@@ -5,9 +5,16 @@ const router = createRouter({
   history: createWebHashHistory(),
   routes: [
     {
-      path: "/home",
-      name: "homeuser",
+      path: "/",
+      name: "main",
       component: MainView,
+      children:[
+        {
+          path:'home',
+          name:'homeuser',
+          component: HomeView
+        }
+      ]
     },
     {
       path: "",

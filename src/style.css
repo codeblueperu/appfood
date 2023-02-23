@@ -32,6 +32,20 @@ body{
   background: var(--background-color);
   font-family: var(--font-family-one);
 }
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 7px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(245, 243, 240);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(203, 203, 206);
+  border-radius: 20px;
+}
 
 .bg-success{
   background: var(--color-success);
