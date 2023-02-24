@@ -1,0 +1,60 @@
+.card-shopping{
+    width: 60%;
+    background: var(--color-white);
+    padding: .7rem;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 10px 5px 11px 0px rgba(126, 125, 125, 0.308);
+    padding-bottom: 9px;
+}
+.header-shopping{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-shopping span{
+    padding: .3rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.header-shopping span:hover{
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+.body-shopping{
+    width: 100%;
+    margin-top: 20px;
+}
+.top-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* ================================================================================================= */
+
+/* PARA DISPOSITIVOS EXTRA PEQUEÑOS */
+@media only screen and (max-width: 600px) {
+    .card-shopping{
+        width: 100%;
+    }
+}
+
+/* PARA DISPOSITIVOS PEQUEÑOS */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* PARA DISPOSITIVOS MEDIANOS */
+@media only screen and (min-width: 768px) {
+}
+
+/* PARA DISPOSITIVOS GRANDES */
+@media only screen and (min-width: 992px) {
+}
+
+/* PARA DISPOSITIVOS EXTRA GRANDES */
+@media only screen and (min-width: 1200px) {
+}

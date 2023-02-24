@@ -8,16 +8,17 @@ aside {
   gap: 10px;
   height: 65px;
 }
-.logo-app{
+
+.logo-app {
   display: flex;
   gap: 7px;
   align-items: center;
   cursor: pointer;
 }
-.logo-app span{
+.logo-app span {
   background: var(--color-dark-ligth);
-  padding: .3rem;
-  color:var(--color-primary);
+  padding: 0.3rem;
+  color: var(--color-primary);
   border-radius: 50%;
 }
 .search-sm {
@@ -45,13 +46,13 @@ aside span.icon-menu:hover {
   box-shadow: 0px 0px 11px 7px var(--color-primary-ligth);
 }
 
-.address-container{
+.address-container {
   display: flex;
   gap: 7px;
   flex-direction: row;
   align-items: center;
 }
-.address-container h5{
+.address-container h5 {
   color: var(--color-dark-ligth);
 }
 main {
@@ -71,13 +72,17 @@ main {
   padding: 0.9rem;
 }
 
-#btn-menu,#btn-shopping{
+#btn-menu,
+#btn-shopping {
   display: none;
 }
-#btn-address{
+#btn-address {
   cursor: pointer;
   color: var(--color-primary);
-  padding: .3rem;
+  padding: 0.3rem;
+}
+footer{
+  display: none;
 }
 
 /* ================================================================================================= */
@@ -86,14 +91,16 @@ main {
 @media only screen and (max-width: 600px) {
   aside {
     position: fixed;
+    margin-top: 0;
     width: 100%;
-    background: var(--color-dark);
+    background: var(--color-primary);
     padding: 0.2rem;
     display: flex;
     justify-content: space-between;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05),
       0 6px 20px 0 rgba(0, 0, 0, 0.02);
     padding: 0.7rem;
+    z-index: 1000000000;
   }
 
   .space-clear {
@@ -107,8 +114,10 @@ main {
   .search-xs {
     width: 100%;
     display: flex;
+    flex-direction: column;
+    gap: 10px;
     position: relative;
-    top: 80px;
+    top: 100px;
     height: 50px;
     align-items: center;
     justify-content: center;
@@ -126,34 +135,128 @@ main {
   }
   main {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 120px;
+    padding-bottom: 70px;
   }
-  .main-category-container {
-    width: 100%;
-    margin: 48px 0;
+  .movimientos-container {
+    display: none;
+  }
+  .address-container{
+    display: none;
+  }
+  #btn-menu{
+    --display: block;
+    color: var(--color-darck);
+    --position: absolute;
+    --right: 14px;
   }
 
-  .category-container {
-    width: 100% !important;
+  footer{
     display: flex;
     flex-direction: row;
-    overflow-x: auto;
-    justify-content: space-between;
-    gap: 13px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    background: var(--color-primary);
+    z-index: 1000000;
+  }
+  footer #btn-shopping{
+    background: var(--color-primary);
+    color: var(--color-dark);
+    display: block;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    padding: .4rem;
+    border-radius: 50%;
+    z-index: 1000000;
+  }
+  footer span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .3rem;
+    --background: var(--color-white);
+    color: var(--color-dark-ligth);
+    border-radius: 50%;
+    font-size: 25px;
   }
 }
 
 /* PARA DISPOSITIVOS PEQUEÑOS */
 @media only screen and (min-width: 600px) {
+  aside{
+    width: 100%;
+    margin: 10px 0px;
+  }
+  main{
+    width: 100%;
+  }
+  .movimientos-container{
+    display: none;
+  }
+  .items{
+    display: flex;
+    justify-content: space-between;
+  }
+  #btn-alert{
+    display: block;
+  }
+ 
+  #btn-menu{
+    display: block;
+    color: var(--color-darck);
+    --position: absolute;
+    --right: 14px;
+  }
 }
 
 /* PARA DISPOSITIVOS MEDIANOS */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
+  aside{
+    width: 100%;
+    --margin: 10px 0px;
+  }
+  main{
+    width: 100%;
+  }
+  .movimientos-container{
+    display: none;
+  }
+ 
+  #btn-menu{
+    display: block;
+  }
 }
+
 
 /* PARA DISPOSITIVOS GRANDES */
 @media only screen and (min-width: 992px) {
+  
 }
 
 /* PARA DISPOSITIVOS EXTRA GRANDES */
 @media only screen and (min-width: 1200px) {
+  aside{
+    width: 80%;
+  }
+  main{
+    width: 80%;
+  }
+  .movimientos-container{
+    display: block;
+    width: 20%;
+  }
+  #btn-menu{
+    display: none;
+  }
+ 
 }

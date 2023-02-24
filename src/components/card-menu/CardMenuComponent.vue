@@ -1,22 +1,20 @@
 <template>
-    <div class="card-menu">
-        <img src="@/assets/img/pizzatree.png" alt="NOT_FOUND_IMAGE">
-        <div class="card-body-menu">
-            <div class="contenido">
-                <b>Italinan Pizza</b>
-                <div class="start-califity">
-                    <span class="active-start material-icons-outlined">star</span>
-                    <span class="material-icons-outlined">star</span>
-                    <span class="material-icons-outlined">star</span>
-                    <span class="material-icons-outlined">star</span>
-                    <span class="material-icons-outlined">star</span>
+    <div class="container">
+        <div class="card-menu">
+            <img src="@/assets/img/pizzatree.png" alt="NOT_FOUND_IMAGE">
+            <div class="card-body-menu">
+                <div class="contenido">
+                    <b>Italinan Pizza + gaseosa INKA COLA 1LT</b>
+                    <div class="start-califity">
+                        
+                    </div>
+                    <p>$ <b>7.49</b></p>
                 </div>
-                <p>$ <b>7.49</b></p>
+                <router-link to="/add-shopping-cart/1"><span class="button-plus material-icons-outlined">add</span> </router-link>
             </div>
-            <span class="button-plus material-icons-outlined">add</span>
         </div>
     </div>
 </template>
 <style scoped>
-    @import './StylecardMenu.css';
+@import './StylecardMenu.css';
 </style>

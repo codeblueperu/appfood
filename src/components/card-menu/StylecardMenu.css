@@ -47,6 +47,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 7px;
 }
 
 .card-menu .card-body-menu .contenido{
@@ -59,7 +60,9 @@
 
 .card-menu .card-body-menu .contenido b{
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
+    text-align: center;
+    padding: 2px;
 }
 
 .card-menu .card-body-menu .contenido .start-califity span{
@@ -90,4 +93,63 @@
     border-radius: 50%;
     cursor: pointer;
     z-index: 100000;
+}
+
+
+/* PARA DISPOSITIVOS MUY PEQUEÑOS */
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .card-menu .card-body-menu{
+        max-height: 220px;
+        margin-top: 15px;
+        padding-bottom: 7px;
+    }
+    .card-menu .card-body-menu .button-plus{
+        padding: .1rem;
+    }
+    .hidden-xs{
+        display: none;
+    }
+    .card-menu .card-body-menu .contenido b{
+        font-weight: 400;
+    }
+    .card-menu .card-body-menu .contenido p{
+        margin-left: -50px;
+    }
+    
+}
+
+/* PARA DISPOSITIVOS PEQUEÑOS */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* PARA DISPOSITIVOS MEDIANOS */
+@media only screen and (min-width: 768px) {
+    .container{
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* PARA DISPOSITIVOS GRANDES */
+@media only screen and (min-width: 992px) {
+}
+
+/* PARA DISPOSITIVOS EXTRA GRANDES */
+@media only screen and (min-width: 1200px) {
+    .container{
+        width: 220px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

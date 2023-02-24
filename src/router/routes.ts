@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import HomeView from "@/modules/home/HomeView.vue";
 import MainView from '@/modules/container/MainView.vue'
+import AddItemView from '@/modules/addItem/AddItemView.vue'
 const router = createRouter({
   history: createWebHashHistory(),
   routes: [
@@ -13,6 +14,11 @@ const router = createRouter({
           path:'home',
           name:'homeuser',
           component: HomeView
+        },
+        {
+          path:'add-shopping-cart/:id',
+          name:'addshoppingcart',
+          component: AddItemView
         }
       ]
     },
