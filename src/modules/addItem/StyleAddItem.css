@@ -1,79 +1,245 @@
-.card-shopping{
-    width: 60%;
-    background: var(--color-white);
-    padding: .7rem;
-    position: relative;
-    border-radius: 15px;
-    box-shadow: 10px 5px 11px 0px rgba(126, 125, 125, 0.308);
-    padding-bottom: 9px;
+.card-shopping {
+  width: 60%;
+  background: var(--color-white);
+  padding: 0.7rem;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 10px 5px 11px 0px rgba(126, 125, 125, 0.308);
+  padding-bottom: 9px;
 }
-.header-shopping{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.header-shopping {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: top;
 }
-.header-shopping span{
-    padding: .3rem;
-    border-radius: 50%;
-    cursor: pointer;
+.header-shopping span {
+  padding: 0.3rem;
+  border-radius: 50%;
+  cursor: pointer;
 }
-.header-shopping span:hover{
-    background: var(--color-primary);
-    color: var(--color-white);
+.header-shopping span:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
 }
-.body-shopping{
-    width: 100%;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.header-shopping .product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
 }
-.top-content{
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.header-shopping .product p {
+  font-size: 12px;
+  padding: 15px;
+  color: #414040;
 }
-.price-item h3{
-    font-size: 25px;
-    font-weight: 600;
+.body-shopping {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.price-item sub{
-    font-size: 17px;
-    color: var(--color-primary);
+.top-content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-direction: row;
+  justify-content: space-around;
 }
-.panel-image{
-    display: flex;
-    justify-content: center;
+.price-item h3 {
+  font-size: 25px;
+  font-weight: 600;
 }
-.panel-image img{
-    width: 60%;
+.price-item sub {
+  font-size: 17px;
+  color: var(--color-primary);
 }
-/* ================================================================================================= */
+.content-size {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+.content-size .presentation {
+  background: var(--color-primary-ligth);
+  padding: 0.5rem;
+}
+.content-size .presentation span {
+  font-size: 14px;
+}
+/* PANEL IMAGE */
+.panel-image {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 50% 50% 0 0;
+  padding: 0.5rem;
+  padding-bottom: 30px;
+}
+.content-size {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 7px;
+  margin-top: 25px;
+}
+.content-size .size {
+  background: #fff;
+  width: 35px;
+  text-align: center;
+  padding: 0.3rem;
+  border-radius: 5px;
+  color: #868282;
+  box-shadow: 3px 3px 15px 5px #dfdada;
+  cursor: pointer;
+}
+.content-size .size:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+  box-shadow: 5px 5px 15px 5px var(--color-primary-ligth);
+}
+.active-size {
+  background: var(--color-primary) !important;
+  color: var(--color-white) !important;
+  box-shadow: 5px 5px 15px 5px var(--color-primary-ligth) !important;
+}
+.panel-image img {
+  border-radius: 60%;
+  width: 90%;
+  box-shadow: 5px 7px 70px 5px #ffecd0;
+}
+.content-count {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3px;
+  margin-top: 25px;
+}
+.content-count span {
+  background: var(--color-primary-ligth);
+  padding: 0.2rem;
+  color: var(--color-primary);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.content-count input {
+  border: none;
+  outline: none;
+  width: 50px;
+  height: 30px;
+  padding: 0.3rem;
+  text-align: center;
+  font-weight: 500;
+  color: var(--color-dark);
+  font-size: 18px;
+  border-radius: 7px;
+  box-shadow: 5px 5px 15px 5px #dfdada;
+}
+.content-food {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.content-food .price {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 0.5rem;
+}
+.content-food .price p {
+  color: #868282;
+  font-size: 15px;
+}
+.content-food .price h5 {
+  font-size: 25px;
+  color: var(--color-dark);
+}
+.content-food .price sub {
+  color: var(--color-primary);
+}
+.content-food .add-shopping {
+  width: 20%;
+  position: relative;
+  right: 0;
+}
+.content-food .add-shopping button {
+  position: absolute;
+  background: var(--color-primary);
+  width: 100%;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border-radius: 15px 0px 0px 15px;
+  right: 0;
+  color: #1f1e1e;
+}
+.content-food .add-shopping button span {
+  color: var(--color-dark);
+}
+.content-food .add-shopping button:hover {
+  box-shadow: 5px 5px 15px 5px var(--color-primary-ligth);
+  color: #474646;
+  font-weight: 500;
+}
+/* =======================================================
+                    RESPONSIVE SIVE
+    ====================================================== */
 
 /* PARA DISPOSITIVOS EXTRA PEQUEÑOS */
-@media only screen and (max-width: 600px) {
-    .card-shopping{
-        width: 100%;
-    }
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .card-shopping {
+    width: 100%;
+  }
+  .top-content .panel-image {
+    width: 100%;
+  }
+  .content-food {
+    flex-direction: column;
+    position: relative;
+    gap: 15px;
+  }
+  .content-food .add-shopping {
+    width: 100%;
+    position: relative;
+  }
+  .content-food .add-shopping button {
+    width: 100%;
+    position: relative;
+  }
+}
+/* PARA DISPOSITIVOS  PEQUEÑOS */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .card-shopping {
+    width: 100%;
+  }
+  .top-content .panel-image {
+    width: 60%;
+  }
+  .content-food .add-shopping {
+    width: 30%;
+  }
+}
+/* PARA DISPOSITIVOS IPAD  */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
 }
 
-/* PARA DISPOSITIVOS PEQUEÑOS */
-@media only screen and (min-width: 600px) {
-
-}
-
-/* PARA DISPOSITIVOS MEDIANOS */
-@media only screen and (min-width: 768px) {
-}
-
-/* PARA DISPOSITIVOS GRANDES */
-@media only screen and (min-width: 992px) {
-}
-
-/* PARA DISPOSITIVOS EXTRA GRANDES */
-@media only screen and (min-width: 1200px) {
+/* PARA DISPOSITIVOS LAPTOPS */
+@media screen and (max-width: 1280px) {
+  .top-content .panel-image {
+    width: 50%;
+  }
 }
