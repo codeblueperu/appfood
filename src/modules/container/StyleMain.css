@@ -28,9 +28,7 @@ aside {
   display: none;
 }
 .items {
-  width: 15%;
-  display: flex;
-  justify-content: end;
+  display: flex; 
   gap: 15px;
 }
 .space-clear {
@@ -80,6 +78,9 @@ main {
   cursor: pointer;
   color: var(--color-primary);
   padding: 0.3rem;
+}
+#btn-user{
+  color: var(--color-dark);
 }
 footer{
   display: none;

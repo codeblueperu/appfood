@@ -18,6 +18,7 @@
         <div class="items">
             <span id="btn-alert" class="icon-menu alert-icon bg-ligth material-icons-outlined">notifications</span>
             <span id="btn-menu" class="icon-menu bg-warning material-icons-outlined">shopping_cart</span>
+            <span id="btn-user" class="icon-menu bg-warning  material-icons-outlined">account_circle</span>
         </div>
     </aside>
 
