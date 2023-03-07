@@ -18,7 +18,7 @@
                 <ItemOrder bg-color="image background-info" />
                 <ItemOrder bg-color="image background-success" />
             </div>
-        </div>
+        </div> 
         <div class="container-checkout">
             <button class="btn btn-warning-round"><span class="material-icons-outlined">sell</span> CHECKOUT</button>
         </div>

@@ -18,114 +18,122 @@
   cursor: pointer;
   color: var(--color-primary);
 }
-.start-shopping-logo  h3{
-    color: var(--color-dark-ligth);
-    font-weight: 600;
+.start-shopping-logo h3 {
+  color: var(--color-dark-ligth);
+  font-weight: 600;
 }
 
-.order-menu{
-    width: 100%;
-    display: flex;
-    flex-direction: column;    
-    margin-top: 25px;
+.order-menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
 }
 
-.order-menu .title{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.order-menu .title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.order-menu .title h3{
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--color-dark);
+.order-menu .title h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-dark);
 }
 
-.order-menu .title span{
-    color: var(--color-primary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: .1s ease;
+.order-menu .title span {
+  color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.1s ease;
 }
-.order-menu .title span i{
-    background: var(--color-primary);
-    color: var(--color-white);
-    font-size: 16px;
-    padding: 1px;
-    border-radius: 5px;
-    transition: .1s ease;
+.order-menu .title span i {
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: 16px;
+  padding: 1px;
+  border-radius: 5px;
+  transition: 0.1s ease;
 }
-.order-menu .title span:hover i{
-    box-shadow: 0px 0px 10px 7px var(--color-primary-extra-light);
-    transform: translate(5px);
+.order-menu .title span:hover i {
+  box-shadow: 0px 0px 10px 7px var(--color-primary-extra-light);
+  transform: translate(5px);
 }
 
-.show-orders{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    margin-top: 25px;
-    padding: .6rem;
-    max-height: 650px;
-    overflow-y: auto;
-    box-sizing: border-box;
-    margin-bottom: 20px;
+.show-orders {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 25px;
+  padding: 0.6rem;
+  max-height: 650px;
+  overflow-y: auto;
+  box-sizing: border-box;
+  margin-bottom: 20px;
 }
 .show-orders::-webkit-scrollbar {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 }
 .show-orders::-webkit-scrollbar:vertical {
-    width:7px;
+  width: 7px;
 }
-.show-orders::-webkit-scrollbar-button:increment,.show-orders::-webkit-scrollbar-button {
-    display: none;
-} 
+.show-orders::-webkit-scrollbar-button:increment,
+.show-orders::-webkit-scrollbar-button {
+  display: none;
+}
 .show-orders::-webkit-scrollbar:horizontal {
-    height: 10px;
+  height: 10px;
 }
 .show-orders::-webkit-scrollbar-thumb {
-    background-color: var(--color-primary-extra-light);
-    border-radius: 20px;
+  background-color: var(--color-primary-extra-light);
+  border-radius: 20px;
 }
 .show-orders::-webkit-scrollbar-track {
-    border-radius: 10px;  
+  border-radius: 10px;
 }
 
-.container-checkout{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding: .7rem;
-    position: absolute;
-    bottom: 0px;
- }
- .btn{
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 7px;
- }
- .btn-warning-round{
-    background: var(--color-primary);
-    color: var(--color-white);
-    border: none;
-    padding: .6rem;
-    width: 75%;
-    border-radius: 70px;
-    transition: .3s ease;
-  }
-  .btn-warning-round:hover{
-    box-shadow: 5px 5px 14px 9px var(--color-primary-ligth);
-    color: var(--color-dark);
-  }
+.container-checkout {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0.7rem;
+  position: absolute;
+  bottom: 0px;
+}
+.btn {
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+.btn-warning-round {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  padding: 0.6rem;
+  width: 75%;
+  border-radius: 70px;
+  transition: 0.3s ease;
+}
+.btn-warning-round:hover {
+  box-shadow: 5px 5px 14px 9px var(--color-primary-ligth);
+  color: var(--color-dark);
+}
+
+/* PARA DISPOSITIVOS LAPTOPS */
+@media screen and (max-width: 1920px) {
+    .show-orders {
+        height: 460px;
+    }
+}
